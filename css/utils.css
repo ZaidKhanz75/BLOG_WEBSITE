@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap');
+
+:root {
+  --main-bg-color: #66a8d4;
+  --font1: 'Baloo Bhaina 2', cursive;
+  --font2: 'Roboto', sans-serif;
+}
+
+.center{
+  text-align: center;
+}
+
+.font1 {
+  font-family: var(--font1);
+}
+
+.font2 {
+  font-family: var(--font2);
+}
+
+.max-width-1 {
+  max-width: 80vw;
+}
+
+.max-width-2 {
+  max-width: 60vw;
+}
+
+.m-auto {
+  margin: auto;
+}
+
+.mx-1{
+  margin-left: 23px;
+  margin-right: 23px;
+}
+
+.my-2 {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+
+.link {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: all;
+}
+
+.link:hover:after {
+  width: 100%;
+}
+
+.link:hover {
+  color: var(--main-bg-color);
+}
+
+.link:active {
+  color: var(--main-bg-color);
+}
+
+.link:focus {
+  color: var(--main-bg-color);
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  background-color: var(--main-bg-color);
+  height: 4px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s ease 0.1s;
+}
+
+
+.btn {
+  border-radius: 10px;
+  color: inherit;
+  background: none;
+  /* width: 30%; */
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  margin: 15px auto;
+  padding: 10px 10px;
+  z-index: 1;
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease-out;
+  z-index: -1;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn:hover::before {
+  width: 100%;
+  height: 100%;
+  background-color: var(--main-bg-color);
+  transform: translateX(0);
+  transition: all 0.4s ease-out;
+}
+
+.form-input {
+  padding: 0px 5px;
+  padding-top: 3px;
+  font-size: 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  margin: 0 13px;
+  font-family: var(--font1);
+}
+
+.form-box input, textarea {
+  width: 52vw;
+  padding: 0px 6px;
+  margin: 7px 0;
+  font-size: 18px;
+  font-family: var(--font1);
+  border: 2px solid var(--main-bg-color);
+  border-radius: 12px;
+}
