@@ -1,2 +1,2 @@
 # CodeAlpha_BLOG_WEBSITE
- blog using html css 
+ YOU can view the website by clicking on this link:
